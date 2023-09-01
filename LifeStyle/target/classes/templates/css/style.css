@@ -1,0 +1,81 @@
+@charset "ISO-8859-1";
+
+/* Styles for the slideshow container and slides */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+/* Styles for the previous and next buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* ... Your previous styles ... */
+
+/* Styles for the featured products section */
+.featured-products {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Styles for each product box */
+.product-box {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+}
+
+/* Styles for product images */
+.product-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+/* Styles for the header over the image */
+.product-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Hover effect to show the header */
+.product-box:hover .product-header {
+    opacity: 1;
+}
+
+
